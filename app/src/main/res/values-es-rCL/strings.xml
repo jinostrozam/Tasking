@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TemplateProject</string>
+    <string name="login_label_email">Correo electrónico</string>
+    <string name="login_label_password">Contraseña</string>
+    <string name="login_ok">Acceder</string>
+    <string name="login_error_no_email">Correo Electrónico obligatorio</string>
+    <string name="login_error_no_password">Contraseña obligatoria</string>
+    <string name="login_error">Usuario y contraseña incorrectos</string>
+    <string name="menu_action_logout">Salir</string>
+    <string name="login_create">Crear cuenta</string>
+    <string name="create_label_email">Correo Electrónico</string>
+    <string name="create_label_password">Contraseña</string>
+    <string name="create_label_confirm">Confirmar contraseña</string>
+    <string name="create_ok">Crear cuenta</string>
+    <string name="create_error">Falló la creación de cuenta</string>
+    <string name="create_error_no_email">Correo Electrónico obligatorio</string>
+    <string name="create_error_no_password">Contraseña obligatoria</string>
+    <string name="create_error_no_confirmation">Confirma la contraseña</string>
+    <string name="create_error_mismatch">Las contraseñas no coinciden</string>
+    <string name="login_link_recover">¿Olvidaste tu contraseña?</string>
+    <string name="recover_email">Correo Electrónico</string>
+    <string name="recover_description">Recibiras un correo con un link para cambiar la contraseña</string>
+    <string name="recover_ok">Mandar código</string>
+    <string name="recover_sent">Te enviamos un correo para reiniciar tu contraseña a la dirección indicada</string>
+    <string name="create_email_notification">Te mandamos un correo para verificar tu identidad</string>
+    <string name="create_text">Te enviaremos un correo para verificar tu cuenta. Verifica tu bandeja de correo no desado si no aparece en tu bandeja de entrada.</string>
+    <string name="create_email_fail">Tuvimos problemas para enviar el correo</string>
+</resources>

@@ -1,3 +1,41 @@
 <resources>
     <string name="app_name">TemplateProject</string>
+    <string name="title_activity_main" translatable="false">MainActivity</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+
+    <string name="menu_home" translatable="false">Home</string>
+    <string name="menu_gallery" translatable="false">Gallery</string>
+    <string name="menu_slideshow" translatable="false">Slideshow</string>
+    <string name="menu_tools" translatable="false">Tools</string>
+    <string name="menu_share" translatable="false">Share</string>
+    <string name="menu_send" translatable="false">Send</string>
+    <string name="login_label_email">Email</string>
+    <string name="login_label_password">Password</string>
+    <string name="login_ok">Login</string>
+    <string name="login_error_no_email">Email Mandatory</string>
+    <string name="login_error_no_password">Password Mandatory</string>
+    <string name="login_error">User and password doesn\'t match</string>
+    <string name="menu_action_logout">Logout</string>
+    <string name="login_create">Create account</string>
+    <string name="create_label_email">Email</string>
+    <string name="create_label_password">Password</string>
+    <string name="create_label_confirm">Confirm password</string>
+    <string name="create_ok">Create account</string>
+    <string name="create_error">Accout creation fail</string>
+    <string name="create_error_no_email">Email Mandatory</string>
+    <string name="create_error_no_password">Password Mandatory</string>
+    <string name="create_error_no_confirmation">Confirm Password</string>
+    <string name="create_error_mismatch">Passwords mismatch</string>
+    <string name="login_link_recover">Forgot your pasword?</string>
+    <string name="recover_email">Email</string>
+    <string name="recover_description">You will get an email with a link to change the password</string>
+    <string name="recover_ok">Send code</string>
+    <string name="recover_sent">We sent an email to reset your password</string>
+    <string name="create_email_notification">We sent you an email to verify your account</string>
+    <string name="create_text">We will send you an email to verify your account. Check your spam also.</string>
+    <string name="create_email_fail">We have issues to deliver the email</string>
 </resources>
