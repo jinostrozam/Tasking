@@ -43,21 +43,6 @@ public class LoginActivity extends DefaultActivity {
         showPassword = findViewById(R.id.show_password);
     }
 
-    @Override
-    public void setEnableViews(boolean loading) {
-        email.setEnabled(!loading);
-        password.setEnabled(!loading);
-        login.setEnabled(!loading);
-        create.setEnabled(!loading);
-        recover.setEnabled(!loading);
-        showPassword.setEnabled(!loading);
-
-        login.setClickable(!loading);
-        create.setClickable(!loading);
-        recover.setClickable(!loading);
-        showPassword.setClickable(!loading);
-    }
-
     public void login(View view) {
         if(!validate()) return;
 

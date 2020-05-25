@@ -41,20 +41,6 @@ public class CreateAccountActivity extends DefaultActivity {
         confirmShow = findViewById(R.id.show_confirm);
     }
 
-    @Override
-    public void setEnableViews(boolean loading) {
-        email.setEnabled(!loading);
-        password.setEnabled(!loading);
-        confirm.setEnabled(!loading);
-        create.setEnabled(!loading);
-        passwordShow.setEnabled(!loading);
-        confirmShow.setEnabled(!loading);
-
-        create.setClickable(!loading);
-        passwordShow.setClickable(!loading);
-        confirmShow.setClickable(!loading);
-    }
-
     public void create(View view) {
         if(!validate(view)) return;
 

@@ -29,14 +29,6 @@ public class RecoverPasswordActivity extends DefaultActivity {
         recover = findViewById(R.id.recover);
     }
 
-    @Override
-    public void setEnableViews(boolean loading) {
-        email.setEnabled(!loading);
-        recover.setEnabled(!loading);
-
-        recover.setClickable(!loading);
-    }
-
     public void recover(View view) {
         if(!validate()) return;
 

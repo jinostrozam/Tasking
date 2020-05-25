@@ -2,6 +2,7 @@ package com.arima.templateproject.activities;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ProgressBar;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -43,10 +44,21 @@ public abstract class DefaultActivity extends AppCompatActivity {
     }
 
     public void setLoadingState(boolean loading) {
-        setEnableViews(loading);
+        if(loading) {
+            getWindow().setFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE, WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE);
+        } else {
+            getWindow().clearFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE);
+        }
 
         loadingPB.setVisibility(loading ? View.VISIBLE : View.GONE);
     }
 
-    public void setEnableViews(boolean loading) {}
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        if(loadingPB != null) {
+            loadingPB.setVisibility(View.GONE);
+            getWindow().clearFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE);
+        }
+    }
 }

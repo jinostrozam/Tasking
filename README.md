@@ -52,7 +52,6 @@ Default project for Android.
 
 ### Loading
 + If you want to use the loading function, you MUST add a ContentLoadingProgressBar in your layout name it loading.
-+ If you want to enable, disable, set not clickable or any other action while the progress bar is displayed, you can override the setEnableViews function.
 
 ### Up to you!
 + Star adding your code!
