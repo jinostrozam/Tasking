@@ -17,6 +17,7 @@ import androidx.annotation.NonNull;
 import com.dronery.tasking.R;
 import com.dronery.tasking.managers.FirestoreManager;
 import com.dronery.tasking.model.Actividades;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentSnapshot;
 
@@ -31,6 +32,7 @@ public class ExampleFragment extends DefaultFragment {
     Actividades lista = new Actividades();
     String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
     String nameStr;
+    FloatingActionButton mail;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View root = super.onCreateView(inflater, container, savedInstanceState);
@@ -108,14 +110,9 @@ public class ExampleFragment extends DefaultFragment {
         EditText input = getActivity().findViewById(R.id.etNewItem);
         String itemText = input.getText().toString();
 
-//        if(!(itemText.equals(""))) {
-//            itemsAdapter.add(itemText);
-//            input.setText("");
-//        }
 
         if(!(itemText.equals(""))){
             lista.getTextos().add(itemText);
-//            lista.getEstado().add(false);
             firestoreManager.saveObject(FirestoreManager.FS_COLLECTION_USUARIOS, userId, lista, task1 -> {
                 itemsAdapter.add(itemText);
                 input.setText("");

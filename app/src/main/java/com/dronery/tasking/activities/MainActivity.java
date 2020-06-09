@@ -56,12 +56,12 @@ public class MainActivity extends DefaultActivity {
         setContentView(R.layout.activity_main);
     }
 
-    @Override
-    public void createViews() {
-        super.createViews();
-        mail = findViewById(R.id.mail);
-        mail.setOnClickListener(view -> showEmail(mail  ));
-    }
+//    @Override
+//    public void createViews() {
+//        super.createViews();
+//        mail = findViewById(R.id.mail);
+//        mail.setOnClickListener(view -> showEmail(mail  ));
+//    }
 
     public void showEmail(View view) {
         Snackbar.make(view, authManager.getUser().getEmail(), Snackbar.LENGTH_LONG).show();
