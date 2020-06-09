@@ -1,8 +1,8 @@
-package com.arima.templateproject.managers;
+package com.dronery.tasking.managers;
 
 import android.app.Activity;
 
-import com.arima.templateproject.model.User;
+import com.dronery.tasking.model.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;

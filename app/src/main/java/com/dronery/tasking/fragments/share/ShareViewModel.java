@@ -1,4 +1,4 @@
-package com.arima.templateproject.fragments.share;
+package com.dronery.tasking.fragments.share;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

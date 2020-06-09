@@ -1,4 +1,4 @@
-package com.arima.templateproject.managers;
+package com.dronery.tasking.managers;
 
 import android.content.Context;
 import android.content.ContextWrapper;

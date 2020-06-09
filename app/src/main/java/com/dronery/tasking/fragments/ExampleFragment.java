@@ -1,8 +1,7 @@
-package com.arima.templateproject.fragments;
+package com.dronery.tasking.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,9 +14,9 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
-import com.arima.templateproject.R;
-import com.arima.templateproject.managers.FirestoreManager;
-import com.arima.templateproject.model.Actividades;
+import com.dronery.tasking.R;
+import com.dronery.tasking.managers.FirestoreManager;
+import com.dronery.tasking.model.Actividades;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentSnapshot;
 
@@ -68,6 +67,12 @@ public class ExampleFragment extends DefaultFragment {
                 items.remove(position);
                 itemsAdapter.notifyDataSetChanged();
 
+
+                lista.getTextos().remove(nameStr);
+                firestoreManager.saveObject(FirestoreManager.FS_COLLECTION_USUARIOS, userId, lista, task1 -> {
+                        itemsAdapter.remove(nameStr);
+                });
+
                 return true;
             }
         });
@@ -88,13 +93,13 @@ public class ExampleFragment extends DefaultFragment {
 
             if(lista.getTextos() == null){
                 lista.setTextos(new ArrayList<>());
-                lista.setEstado(new ArrayList<>());
+//                lista.setEstado(new ArrayList<>());
             }
 
-            for (int i=0; i<= lista.getEstado().size() -1; i++){
-                if(lista.getEstado().get(i) == false) {
+            for (int i=0; i<= lista.getTextos().size() -1; i++){
+//                if(lista.getEstado().get(i) == false) {
                     itemsAdapter.add(lista.getTextos().get(i));
-                }
+//                }
             }
         });
     }
@@ -110,7 +115,7 @@ public class ExampleFragment extends DefaultFragment {
 
         if(!(itemText.equals(""))){
             lista.getTextos().add(itemText);
-            lista.getEstado().add(false);
+//            lista.getEstado().add(false);
             firestoreManager.saveObject(FirestoreManager.FS_COLLECTION_USUARIOS, userId, lista, task1 -> {
                 itemsAdapter.add(itemText);
                 input.setText("");

@@ -1,4 +1,4 @@
-package com.arima.templateproject;
+package com.dronery.tasking;
 
 import android.content.Context;
 

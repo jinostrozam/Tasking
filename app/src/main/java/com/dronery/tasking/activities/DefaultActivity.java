@@ -1,4 +1,4 @@
-package com.arima.templateproject.activities;
+package com.dronery.tasking.activities;
 
 import android.os.Bundle;
 import android.view.View;
@@ -7,10 +7,10 @@ import android.widget.ProgressBar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.arima.templateproject.R;
-import com.arima.templateproject.managers.FirebaseAuthManager;
-import com.arima.templateproject.managers.FirestoreManager;
-import com.arima.templateproject.managers.SharedPreferencesManager;
+import com.dronery.tasking.R;
+import com.dronery.tasking.managers.FirebaseAuthManager;
+import com.dronery.tasking.managers.FirestoreManager;
+import com.dronery.tasking.managers.SharedPreferencesManager;
 
 public abstract class DefaultActivity extends AppCompatActivity {
     protected DefaultActivity thisActivity;

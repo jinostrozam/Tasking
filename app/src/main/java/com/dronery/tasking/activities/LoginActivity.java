@@ -1,4 +1,4 @@
-package com.arima.templateproject.activities;
+package com.dronery.tasking.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.arima.templateproject.R;
+import com.dronery.tasking.R;
 import com.google.android.material.snackbar.Snackbar;
 
 public class LoginActivity extends DefaultActivity {

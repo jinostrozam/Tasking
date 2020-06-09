@@ -1,9 +1,9 @@
-package com.arima.templateproject.activities;
+package com.dronery.tasking.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.arima.templateproject.R;
+import com.dronery.tasking.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 

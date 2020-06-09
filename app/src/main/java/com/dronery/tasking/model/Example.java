@@ -1,4 +1,4 @@
-package com.arima.templateproject.model;
+package com.dronery.tasking.model;
 
 import com.google.firebase.firestore.PropertyName;
 

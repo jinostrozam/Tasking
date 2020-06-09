@@ -1,10 +1,10 @@
-package com.arima.templateproject.activities;
+package com.dronery.tasking.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.arima.templateproject.managers.SharedPreferencesManager;
-import com.arima.templateproject.model.User;
+import com.dronery.tasking.managers.SharedPreferencesManager;
+import com.dronery.tasking.model.User;
 
 public class SplashActivity extends DefaultActivity {
 

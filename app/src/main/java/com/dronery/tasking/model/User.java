@@ -1,4 +1,4 @@
-package com.arima.templateproject.model;
+package com.dronery.tasking.model;
 
 public class User {
     private String id;

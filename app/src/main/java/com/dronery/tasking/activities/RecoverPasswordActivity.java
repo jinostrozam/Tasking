@@ -1,11 +1,11 @@
-package com.arima.templateproject.activities;
+package com.dronery.tasking.activities;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.arima.templateproject.R;
+import com.dronery.tasking.R;
 import com.google.android.material.snackbar.Snackbar;
 
 public class RecoverPasswordActivity extends DefaultActivity {

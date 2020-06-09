@@ -1,4 +1,4 @@
-package com.arima.templateproject.managers;
+package com.dronery.tasking.managers;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -12,7 +12,7 @@ import java.util.Map;
 
 public class FirestoreManager {
     //Firestore collections
-    public static final String FS_COLLECTION_USUARIOS = "usuarios";
+    public static final String FS_COLLECTION_USUARIOS = "users";
 
     //Firestore documents
     public static final String FS_DOCUMENT_EXAMPLE = "example_document";

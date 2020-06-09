@@ -1,4 +1,4 @@
-package com.arima.templateproject.fragments.share;
+package com.dronery.tasking.fragments.share;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.arima.templateproject.R;
+import com.dronery.tasking.R;
 
 public class ShareFragment extends Fragment {
 

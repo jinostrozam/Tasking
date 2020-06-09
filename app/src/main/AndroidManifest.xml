@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.arima.templateproject">
+    package="com.dronery.tasking">
 
     <application
         android:allowBackup="true"
@@ -10,14 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".activities.MainActivity"
+            android:name="com.dronery.tasking.activities.MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".activities.RecoverPasswordActivity" />
-        <activity android:name=".activities.CreateAccountActivity" />
-        <activity android:name=".activities.LoginActivity" />
+        <activity android:name="com.dronery.tasking.activities.RecoverPasswordActivity" />
+        <activity android:name="com.dronery.tasking.activities.CreateAccountActivity" />
+        <activity android:name="com.dronery.tasking.activities.LoginActivity" />
         <activity
-            android:name=".activities.SplashActivity"
+            android:name="com.dronery.tasking.activities.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar.Splash">
             <intent-filter>
