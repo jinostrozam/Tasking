@@ -12,7 +12,7 @@ import java.util.Map;
 
 public class FirestoreManager {
     //Firestore collections
-    public static final String FS_COLLECTION_EXAMPLE = "example_collection";
+    public static final String FS_COLLECTION_USUARIOS = "usuarios";
 
     //Firestore documents
     public static final String FS_DOCUMENT_EXAMPLE = "example_document";
