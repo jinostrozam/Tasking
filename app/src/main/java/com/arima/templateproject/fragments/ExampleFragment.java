@@ -2,6 +2,7 @@ package com.arima.templateproject.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,8 +31,7 @@ public class ExampleFragment extends DefaultFragment {
     Button button;
     Actividades lista = new Actividades();
     String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
-
-
+    String nameStr;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View root = super.onCreateView(inflater, container, savedInstanceState);
@@ -61,10 +61,13 @@ public class ExampleFragment extends DefaultFragment {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
                 Context context = getActivity().getApplicationContext();
-                Toast.makeText(context, "Item Removed", Toast.LENGTH_LONG).show();
 
+                nameStr = parent.getItemAtPosition(position).toString();
+
+                Toast.makeText(context, "Actividad "+nameStr+" eliminada", Toast.LENGTH_LONG).show();
                 items.remove(position);
                 itemsAdapter.notifyDataSetChanged();
+
                 return true;
             }
         });
@@ -78,6 +81,7 @@ public class ExampleFragment extends DefaultFragment {
             }
             DocumentSnapshot documento = task.getResult();
             lista = documento.toObject(Actividades.class);
+
             if(lista == null){
                 lista = new Actividades();
             }
