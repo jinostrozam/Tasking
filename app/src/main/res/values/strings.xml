@@ -38,4 +38,9 @@
     <string name="create_email_notification">We sent you an email to verify your account</string>
     <string name="create_text">We will send you an email to verify your account. Check your spam also.</string>
     <string name="create_email_fail">We have issues to deliver the email</string>
+    <string name="word_task">task</string>
+    <string name="word_removed">removed</string>
+    <string name="message_enter_task">Please enter a task</string>
+    <string name="text_enter_task">Enter new task</string>
+    <string name="button_add_task">Add item</string>
 </resources>
