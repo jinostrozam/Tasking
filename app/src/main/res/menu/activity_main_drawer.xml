@@ -10,7 +10,7 @@
             android:title="@string/menu_home" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="@string/side_sep">
         <menu>
             <item
                 android:id="@+id/nav_share"
