@@ -73,20 +73,14 @@ public class ExampleFragment extends DefaultFragment {
             listVIew.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
                 @Override
                 public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-
-                //Toast.makeText(context, R.string.word_task +" "+ nameStr +" "+ R.string.word_removed, Toast.LENGTH_LONG).show(); //no funciona
-                Toast.makeText(getContext(), R.string.alert_deleted_succesful, Toast.LENGTH_LONG).show();
-
-                items.remove(position);
-                itemsAdapter.notifyDataSetChanged();
-
                     Context context = getActivity().getApplicationContext();
 
                     nameStr = parent.getItemAtPosition(position).toString();
 
-                    //Toast.makeText(context, R.string.word_task +" "+ nameStr +" "+ R.string.word_removed, Toast.LENGTH_LONG).show(); //no funciona
-                    Toast.makeText(context, R.string.alert_deleted_succesful, Toast.LENGTH_LONG).show();
-
+                    Toast.makeText(context,
+                            getContext().getResources().getString(R.string.word_task) + " " + nameStr + " "
+                                    + getContext().getResources().getString(R.string.word_removed), Toast.LENGTH_LONG
+                    ).show();
                     items.remove(position);
                     itemsAdapter.notifyDataSetChanged();
 
@@ -99,6 +93,7 @@ public class ExampleFragment extends DefaultFragment {
                     return true;
                 }
             });
+
 
         }catch(Throwable e){
             e.printStackTrace();
