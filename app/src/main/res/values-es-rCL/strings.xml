@@ -28,6 +28,31 @@
     <string name="create_email_fail">Tuvimos problemas para enviar el correo</string>
     <string name="menu_home" translatable="false">Lista de Tareas</string>
     <string name="nav_header_subtitle" translatable="false">Recuerda lo importante</string>
+    <string name="alert_succesful_firebase">¡Tarea Agregada Exitosa!</string>
+    <string name="alert_error_firebase">Ups!, Error al agregar tarea</string>
+    <string name="alert_condition_delete">¿Estás seguro de eliminar tarea?</string>
+    <string name="alert_header">¡Tasking Mensajes!</string>
+    <string name="alert_empty_task">¡Debe escribir una tarea!</string>
+    <string name="alert_button_ok">ENTENDIDO</string>
+    <string name="alert_button_cancel">CANCELAR</string>
+    <string name="alert_deleted_succesful">Tarea eliminada exitosa</string>
+    <string name="alert_cancel_deleted">Tarea no eliminada</string>
+    <string name="alert_error_login">"Error en login, favor contáctanos "</string>
+    <string name="alert_mail_dev">dev.tasking@tasking.cl</string>
+    <string name="email_subject">Tasking!, error en aplicación</string>
+    <string name="email_body">¡Hola!, entontré un bug en la aplicación con código</string>
+    <string name="code_email_ExampleFragment">123456</string>
+    <string name="alert_error_delete_item">Error en login, porfavor contáctanos</string>
+    <string name="alert_error_get_document">Error en obtener documentos, porfavor contáctanos</string>
+    <string name="alert_error_add_item">Error al agregar item, porfavor contáctanos</string>
+    <string name="code_email_LoginActivity">654321</string>
+    <string name="code_email_MainActivity">987654</string>
+    <string name="alert_error_validate_email">Error en validar email, porfavor contáctanos</string>
+    <string name="error_email_CreateAccountActivity">654987</string>
+    <string name="error_email_RecoverPasswordActivity">963852</string>
+    <string name="alert_error_create_account">Error en crear cuenta, porfavor contáctanos</string>
+    <string name="alert_error_validate_login">Error en validar login, porfavor contáctanos</string>
+    <string name="alert_error_recover_password">Error en recuperar contraseña, porfavor contáctanos</string>
     <string name="word_task">tarea</string>
     <string name="word_removed">eliminada</string>
     <string name="message_enter_task">Por favor ingresa una tarea</string>

@@ -1,12 +1,17 @@
 package com.dronery.tasking.activities;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 import android.os.Bundle;
 
 import com.dronery.tasking.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -23,9 +28,12 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
 
+import java.util.List;
+
 public class MainActivity extends DefaultActivity {
     private FloatingActionButton mail;
     private AppBarConfiguration mAppBarConfiguration;
+    private AlertDialog.Builder builder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +51,7 @@ public class MainActivity extends DefaultActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+        builder = new AlertDialog.Builder(MainActivity.this);
     }
 
     @Override
@@ -92,14 +101,49 @@ public class MainActivity extends DefaultActivity {
     }
 
     public void validateLogin() {
-        if(!authManager.isLogin()) {
-            logout();
-        }
-        authManager.reload(thisActivity, task -> {
-            if(!task.isSuccessful() || !authManager.isLogin()) {
+        try{
+            if(!authManager.isLogin()) {
                 logout();
             }
-        });
+            authManager.reload(thisActivity, task -> {
+                if(!task.isSuccessful() || !authManager.isLogin()) {
+                    logout();
+                }
+            });
+
+            //throw new Exception("cai");
+        }catch(Throwable e){
+            e.printStackTrace();
+            builder.setTitle(R.string.alert_header).setMessage(R.string.alert_error_validate_login)
+                    .setNeutralButton(R.string.alert_button_ok, new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            //  Action for 'NO' Button
+                            testEmail();
+                            dialog.cancel();
+
+                        }
+                    })
+                    .show();
+        }
+    }
+
+    public void testEmail(){
+        final Intent intent = new Intent(android.content.Intent.ACTION_SEND);
+
+        intent.putExtra(Intent.EXTRA_EMAIL, new String[]{ getApplicationContext().getResources().getString(R.string.alert_mail_dev) });
+        intent.putExtra(Intent.EXTRA_SUBJECT, getApplicationContext().getResources().getString(R.string.email_subject));
+        intent.putExtra(Intent.EXTRA_TEXT, getApplicationContext().getResources().getString(R.string.email_body) +
+                getApplicationContext().getResources().getString(R.string.code_email_MainActivity));
+        intent.setType("text/plain");
+        final PackageManager pm = getApplicationContext().getPackageManager();
+        final List<ResolveInfo> matches = pm.queryIntentActivities(intent, 0);
+        ResolveInfo best = null;
+        for (final ResolveInfo info : matches)
+            if (info.activityInfo.packageName.endsWith(".gm") ||
+                    info.activityInfo.name.toLowerCase().contains("gmail")) best = info;
+        if (best != null)
+            intent.setClassName(best.activityInfo.packageName, best.activityInfo.name);
+        startActivity(intent);
     }
 
     public void logout() {
