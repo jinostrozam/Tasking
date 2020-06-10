@@ -28,9 +28,15 @@
     <string name="create_email_fail">Tuvimos problemas para enviar el correo</string>
     <string name="menu_home" translatable="false">Lista de Tareas</string>
     <string name="nav_header_subtitle" translatable="false">Recuerda lo importante</string>
+<<<<<<< HEAD
     <string name="word_task">tarea</string>
     <string name="word_removed">eliminada</string>
     <string name="message_enter_task">Por favor ingresa una tarea</string>
     <string name="text_enter_task">Ingresa nueva tarea</string>
     <string name="button_add_task">Agregar</string>
+=======
+    <string name="app_info">sobre la aplicacion</string>
+    <string name="legal">Informacion Legal</string>
+    <string name="menu_share" translatable="false">Informacion</string>
+>>>>>>> todolist5
 </resources>

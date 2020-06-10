@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/app.iml" filepath="$PROJECT_DIR$/.idea/app.iml" group="tasking/app" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app.iml" group="tasking/app" />
+>>>>>>> todolist5
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2104854662/tasking.iml" filepath="$PROJECT_DIR$/.idea/modules/-2104854662/tasking.iml" group="tasking" />
     </modules>
   </component>

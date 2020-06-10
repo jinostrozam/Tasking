@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="info_list1">
+        <item>Version de Tasking: 2020.06.10 (Android 8)</item>
+        <item>Ultima sincronizacion:  Hace 1 minuto</item>
+        <item>Visita www.tasking.cl</item>
+        <item>Visita nuestro blog</item>
+        <item>Trabaja con nosotros</item>
+    </string-array>
+</resources>
