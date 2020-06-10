@@ -65,7 +65,7 @@ public class ExampleFragment extends DefaultFragment {
 
                 nameStr = parent.getItemAtPosition(position).toString();
 
-                Toast.makeText(context, "Actividad "+nameStr+" eliminada", Toast.LENGTH_LONG).show();
+                Toast.makeText(context,R.string.word_task + " " + nameStr + " " + R.string.word_removed, Toast.LENGTH_LONG).show();
                 items.remove(position);
                 itemsAdapter.notifyDataSetChanged();
 
@@ -119,7 +119,7 @@ public class ExampleFragment extends DefaultFragment {
             });
         }
         else{
-            Toast.makeText(getActivity().getApplicationContext(), "Please enter text.. ", Toast.LENGTH_LONG).show();
+            Toast.makeText(getActivity().getApplicationContext(), R.string.message_enter_task, Toast.LENGTH_LONG).show();
         }
     }
 
