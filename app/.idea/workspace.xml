@@ -7,9 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0971a8dc-ec06-48d1-9d68-fbd1398e1cb2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/menu/activity_main_drawer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/menu/activity_main_drawer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_login.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/values-es-rCL/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values-es-rCL/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/strings.xml" afterDir="false" />
     </list>

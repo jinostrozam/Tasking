@@ -34,12 +34,12 @@
     <string name="recover_email">Email</string>
     <string name="recover_description">You will get an email with a link to change the password</string>
     <string name="recover_ok">Send code</string>
-    <string name="recover_sent">We sent an email to reset your password</string>
+    <string name="recover_sent">We sent you an email to reset your password</string>
     <string name="create_email_notification">We sent you an email to verify your account</string>
     <string name="create_text">We will send you an email to verify your account. Check your spam also.</string>
     <string name="create_email_fail">We have issues to deliver the email</string>
     <string name="alert_succesful_firebase">Tasking Added Succesfully!</string>
-    <string name="alert_error_firebase">Ups!, Error at add task</string>
+    <string name="alert_error_firebase">Ups!, Error at adding task</string>
     <string name="alert_condition_delete">Are you sure delete task?</string>
     <string name="alert_header">Tasking Messages!</string>
     <string name="alert_empty_task">Must typing a task!</string>
@@ -52,8 +52,8 @@
     <string name="email_subject">Tasking! app bug issues</string>
     <string name="email_body">Hi!, I found a bug issue whit code</string>
     <string name="code_email_ExampleFragment">123456</string>
-    <string name="alert_error_delete_item">Error at delete task, please contact us</string>
-    <string name="alert_error_get_document">Error at get documents, please contact us</string>
+    <string name="alert_error_delete_item">Error at deleting task, please contact us</string>
+    <string name="alert_error_get_document">Error at getting documents, please contact us</string>
     <string name="alert_error_add_item">Error at add item, please contact us</string>
     <string name="code_email_LoginActivity">654321</string>
     <string name="code_email_MainActivity">987654</string>

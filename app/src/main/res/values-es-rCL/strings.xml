@@ -21,29 +21,29 @@
     <string name="login_link_recover">¿Olvidaste tu contraseña?</string>
     <string name="recover_email">Correo Electrónico</string>
     <string name="recover_description">Recibiras un correo con un link para cambiar la contraseña</string>
-    <string name="recover_ok">Mandar código</string>
+    <string name="recover_ok">Enviar código</string>
     <string name="recover_sent">Te enviamos un correo para reiniciar tu contraseña a la dirección indicada</string>
     <string name="create_email_notification">Te mandamos un correo para verificar tu identidad</string>
     <string name="create_text">Te enviaremos un correo para verificar tu cuenta. Verifica tu bandeja de correo no desado si no aparece en tu bandeja de entrada.</string>
     <string name="create_email_fail">Tuvimos problemas para enviar el correo</string>
     <string name="menu_home" translatable="false">Lista de Tareas</string>
     <string name="nav_header_subtitle" translatable="false">Recuerda lo importante</string>
-    <string name="alert_succesful_firebase">¡Tarea Agregada Exitosa!</string>
+    <string name="alert_succesful_firebase">¡Tarea Agregada Exitosamente!</string>
     <string name="alert_error_firebase">Ups!, Error al agregar tarea</string>
     <string name="alert_condition_delete">¿Estás seguro de eliminar tarea?</string>
     <string name="alert_header">¡Tasking Mensajes!</string>
     <string name="alert_empty_task">¡Debe escribir una tarea!</string>
     <string name="alert_button_ok">ENTENDIDO</string>
     <string name="alert_button_cancel">CANCELAR</string>
-    <string name="alert_deleted_succesful">Tarea eliminada exitosa</string>
+    <string name="alert_deleted_succesful">Tarea eliminada exitosamente</string>
     <string name="alert_cancel_deleted">Tarea no eliminada</string>
     <string name="alert_error_login">"Error en login, favor contáctanos "</string>
     <string name="alert_mail_dev">dev.tasking@tasking.cl</string>
     <string name="email_subject">Tasking!, error en aplicación</string>
     <string name="email_body">¡Hola!, entontré un bug en la aplicación con código</string>
     <string name="code_email_ExampleFragment">123456</string>
-    <string name="alert_error_delete_item">Error en login, porfavor contáctanos</string>
-    <string name="alert_error_get_document">Error en obtener documentos, porfavor contáctanos</string>
+    <string name="alert_error_delete_item">Error en login, por favor contáctanos</string>
+    <string name="alert_error_get_document">Error en obtener documentos, por favor contáctanos</string>
     <string name="alert_error_add_item">Error al agregar item, porfavor contáctanos</string>
     <string name="code_email_LoginActivity">654321</string>
     <string name="code_email_MainActivity">987654</string>
