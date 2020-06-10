@@ -28,4 +28,7 @@
     <string name="create_email_fail">Tuvimos problemas para enviar el correo</string>
     <string name="menu_home" translatable="false">Lista de Tareas</string>
     <string name="nav_header_subtitle" translatable="false">Recuerda lo importante</string>
+    <string name="app_info">sobre la aplicacion</string>
+    <string name="legal">Informacion Legal</string>
+    <string name="menu_share" translatable="false">Informacion</string>
 </resources>
