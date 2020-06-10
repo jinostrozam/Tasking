@@ -4,14 +4,14 @@
     <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
     <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
     <string name="nav_header_title" translatable="false">Tasking</string>
-    <string name="nav_header_subtitle">Remember what\'s matter</string>
+    <string name="nav_header_subtitle">Remember what matters</string>
     <string name="nav_header_desc" translatable="false">Navigation header</string>
 
     <string name="menu_home">Task List</string>
     <string name="menu_gallery" translatable="false">Gallery</string>
     <string name="menu_slideshow" translatable="false">Slideshow</string>
     <string name="menu_tools" translatable="false">Tools</string>
-    <string name="menu_share" translatable="false">Share</string>
+    <string name="menu_share">App Information</string>
     <string name="menu_send" translatable="false">Send</string>
     <string name="login_label_email">Email</string>
     <string name="login_label_password">Password</string>
@@ -63,4 +63,12 @@
     <string name="alert_error_create_account">Error at create account, please contact us</string>
     <string name="alert_error_validate_login">Error at validate login, please contact us</string>
     <string name="alert_error_recover_password">Error at recover password, please contact us</string>
+    <string name="word_task">task</string>
+    <string name="word_removed">removed</string>
+    <string name="message_enter_task">Please enter a task</string>
+    <string name="text_enter_task">Enter new task</string>
+    <string name="button_add_task">Add item</string>
+    <string name="app_info">App info</string>
+    <string name="legal">Legal</string>
+    <string name="side_sep">About Tasking</string>
 </resources>
