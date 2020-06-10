@@ -65,7 +65,9 @@ public class ExampleFragment extends DefaultFragment {
 
                 nameStr = parent.getItemAtPosition(position).toString();
 
-                Toast.makeText(context,R.string.word_task + " " + nameStr + " " + R.string.word_removed, Toast.LENGTH_LONG).show();
+                //Toast.makeText(context, R.string.word_task +" "+ nameStr +" "+ R.string.word_removed, Toast.LENGTH_LONG).show(); //no funciona
+                Toast.makeText(context, "Actividad "+nameStr+" eliminada", Toast.LENGTH_LONG).show();
+
                 items.remove(position);
                 itemsAdapter.notifyDataSetChanged();
 
